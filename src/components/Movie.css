@@ -1,0 +1,38 @@
+.container { 
+  display: grid;
+  grid-gap: 10px;
+  background-color: #A9A9A9;
+  padding: 10px;
+  width: 95vw;
+  height: 53.4vw;
+}
+
+.poster { 
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 10;
+ }
+.title{
+  grid-column: 3 / span 4;
+  grid-row: 1;
+}
+.info{
+  grid-column: 3 / span 4;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+}
+.description{
+  grid-column: 3 / span 4;
+  grid-row: 3 / span 8;
+}
+
+.poster-image {
+  width: 100%;
+}
+
+.container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+}

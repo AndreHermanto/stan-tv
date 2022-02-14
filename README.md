@@ -29,18 +29,24 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## How did you decide on the technical and architectural choices used as part of your solution?
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+I used create-react-app typescript template since it already come with all necessary tools for me to start a new React project quickly which is still inline with the coding challenge. In addition, I used react-router v6 to handle navigation. I don't use any other JS/CSS libraries, while keeping the app responsive to any screen size and keeping 16:9 ratio.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Are there any improvements you could make to your submission?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+I'd probably use Redux as the application grows, to be able to handle passing state between components more easily. As of now, I passed data between components using react-router navigation state, which is not ideal as the app grows more complex.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## What would you do differently if you were allocated more time?
 
-## Learn More
+I haven't finish implementing the Home page interaction to choose a program using `left`, `right` and `enter` keyboard keys. If I were to spend more time on it, I can implement this by storing the currently selected program and add event listener(should work the same way like on Program and Error page). I would also have to modify the carousel component as well.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+In addition, I'd add more test using Jest and Enzyme. I would test 
+- the state changes throughout the lifecycle component.
+- Mock API fetch to see how the component render with mock data
+- test user interaction with `left`, `right` and `enter` keyboard keys on `home` page and `backspace` keys on `program` and `error` page.
+- Create UI testing on Carousel and Movie components
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Other Githup repo:
+- https://github.com/AndreHermanto/sgc/tree/feature/agha-all-cohorts (using angular)
+- https://github.com/AndreHermanto/web-report-finder (on early stages)
